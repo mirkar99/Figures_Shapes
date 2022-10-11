@@ -1,3 +1,12 @@
+const squareAreaInputs = [...document.querySelector(".form--AreaSquare")];
+const rectangleAreaInputs = [...document.querySelector(".form--AreaRectangle")];
+const circleAreaInptus = [...document.querySelector(".form--AreaCircle")];
+const triangleAreaInputs = [...document.querySelector(".form--AreaTriangle")];
+
+const squareCircumferenceInputs = [...document.querySelector(".form--CircumferenceSquare")];
+const rectangleCircumferenceInputs = [...document.querySelector(".form--CircumferenceRectangle")];
+const circleCircumferenceInputs = [...document.querySelector(".form--CircumferenceCircle")];
+
 const naviggation = {
     areaSection: document.querySelector('.section--area'),
     circumferenceSection: document.querySelector('.section--circumference'),
@@ -39,9 +48,9 @@ const Shapes = {
     }
 }
 const SquareAreaFrom = {
-    a: [...document.querySelector(".form--AreaSquare")][0],
-    inputMsg: [...document.querySelector(".form--AreaSquare")][1],
-    button: [...document.querySelector(".form--AreaSquare")][2],
+    a: squareAreaInputs[0],
+    inputMsg: squareAreaInputs[1],
+    button: squareAreaInputs[2],
     calculateArea: function () {
         this.button.addEventListener('click', () => {
             if (FormValidation.validation(this.inputMsg, this.a)) {
@@ -53,10 +62,10 @@ const SquareAreaFrom = {
 
 }
 const RectangleAreaFrom = {
-    a: [...document.querySelector(".form--AreaRectangle")][0],
-    b: [...document.querySelector(".form--AreaRectangle")][1],
-    inputMsg: [...document.querySelector(".form--AreaRectangle")][2],
-    button: [...document.querySelector(".form--AreaRectangle")][3],
+    a: rectangleAreaInputs[0],
+    b: rectangleAreaInputs[1],
+    inputMsg: rectangleAreaInputs[2],
+    button: rectangleAreaInputs[3],
     calculateArea: function () {
         this.button.addEventListener('click', () => {
             if (FormValidation.validation(this.inputMsg, this.a, this.b)) {
@@ -67,9 +76,9 @@ const RectangleAreaFrom = {
     }
 }
 const CircleAreaFrom = {
-    r: [...document.querySelector(".form--AreaCircle")][0],
-    inputMsg: [...document.querySelector(".form--AreaCircle")][1],
-    button: [...document.querySelector(".form--AreaCircle")][2],
+    r: circleAreaInptus[0],
+    inputMsg: circleAreaInptus[1],
+    button: circleAreaInptus[2],
     calculateArea: function () {
         this.button.addEventListener('click', () => {
             if (FormValidation.validation(this.inputMsg, this.r)) {
@@ -80,10 +89,10 @@ const CircleAreaFrom = {
     }
 }
 const TriangleAreaFrom = {
-    a: [...document.querySelector(".form--AreaTriangle")][0],
-    h: [...document.querySelector(".form--AreaTriangle")][1],
-    inputMsg: [...document.querySelector(".form--AreaTriangle")][2],
-    button: [...document.querySelector(".form--AreaTriangle")][3],
+    a: triangleAreaInputs[0],
+    h: triangleAreaInputs[1],
+    inputMsg: triangleAreaInputs[2],
+    button: triangleAreaInputs[3],
     calculateArea: function () {
         this.button.addEventListener('click', () => {
             if (FormValidation.validation(this.inputMsg, this.a, this.h)) {
@@ -95,9 +104,9 @@ const TriangleAreaFrom = {
 }
 
 const SquareCircumferenceFrom = {
-    a: [...document.querySelector(".form--CircumferenceSquare")][0],
-    inputMsg: [...document.querySelector(".form--CircumferenceSquare")][1],
-    button: [...document.querySelector(".form--CircumferenceSquare")][2],
+    a: squareCircumferenceInputs[0],
+    inputMsg: squareCircumferenceInputs[1],
+    button: squareCircumferenceInputs[2],
     calculateCircumference: function () {
         this.button.addEventListener('click', () => {
             if (FormValidation.validation(this.inputMsg, this.a)) {
@@ -108,10 +117,10 @@ const SquareCircumferenceFrom = {
     }
 }
 const RectangleCircumferenceFrom = {
-    a: [...document.querySelector(".form--CircumferenceRectangle")][0],
-    b: [...document.querySelector(".form--CircumferenceRectangle")][1],
-    inputMsg: [...document.querySelector(".form--CircumferenceRectangle")][2],
-    button: [...document.querySelector(".form--CircumferenceRectangle")][3],
+    a: rectangleCircumferenceInputs[0],
+    b: rectangleCircumferenceInputs[1],
+    inputMsg: rectangleCircumferenceInputs[2],
+    button: rectangleCircumferenceInputs[3],
     calculateCircumference: function () {
         this.button.addEventListener('click', () => {
             if (FormValidation.validation(this.inputMsg, this.a, this.b)) {
@@ -122,9 +131,9 @@ const RectangleCircumferenceFrom = {
     }
 }
 const CircleCircumferenceFrom = {
-    d: [...document.querySelector(".form--CircumferenceCircle")][0],
-    inputMsg: [...document.querySelector(".form--CircumferenceCircle")][1],
-    button: [...document.querySelector(".form--CircumferenceCircle")][2],
+    d: circleCircumferenceInputs[0],
+    inputMsg: circleCircumferenceInputs[1],
+    button: circleCircumferenceInputs[2],
     calculateCircumference: function () {
         this.button.addEventListener('click', () => {
             if (FormValidation.validation(this.inputMsg, this.d)) {
