@@ -1,2 +1,2 @@
 # Figures_Shapes
-Application for basic geometry problems made in HTML,CSS and JS
+Application HTML,CSS and JS for solving basic geometry problems made 
