@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="application for basic geometry problems">
+    <title>Figures_Shapes</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Figures_Shapes</h1>
+        <nav class="nav">
+            <button class="nav__button nav__button--area">Area</button>
+            <button class="nav__button nav__button--circuit">Circumference</button>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section section--area">
+            <div class="box">
+                <h1 class="box__title">Square</h1>
+                <h2 class="box__text">Area</h2>
+                <img class="box__img" alt="Square-Area-Representation" src="img/Square-Area.png" height="200"
+                    width="200">
+                <form class="form form--AreaSquare" action="#">
+                    <label for="inputOne">A</label>
+                    <input class="form__input" type="number" id="inputOne" min="0" max="100000">
+                    Value
+                    <input class="form__input" type="text" name="value" readonly>
+                    <button class="form__button" type="button">Count</button>
+                </form>
+            </div>
+            <div class="box">
+                <h1 class="box__title">Rectangle</h1>
+                <h2 class="box__text">Area</h2>
+                <img class="box__img" alt="Rectangle-Area-Representation" src="img/Rectangle-Area.png" height="200"
+                    width="225">
+                <form class="form form--AreaRectangle" action="#">
+                    <label for="inputTwo">A</label>
+                    <input class="form__input" type="number" id="inputTwo" min="0" max="100000">
+                    <label for="inputThree">B</label>
+                    <input class="form__input" type="number" id="inputThree" min="0" max="100000">
+                    Value
+                    <input class="form__input" type="text" name="value" readonly>
+                    <button class="form__button form__button" type="button">Count</button>
+                </form>
+            </div>
+            <div class="box">
+                <h1 class="box__title">Circle</h1>
+                <h2 class="box__text">Area</h2>
+                <img class="box__img" alt="Circle-Area-Representation" src="img/Circle-Area.png" height="200"
+                    width="200">
+                <form class="form form--AreaCircle" action="#">
+                    <label for="inputFour">R</label>
+                    <input class="form__input" type="number" id="inputFour" min="0" max="100000">
+                    Value
+                    <input class="form__input" type="text" name="value" readonly>
+                    <button class="form__button" type="button">Count</button>
+                </form>
+            </div>
+            <div class="box">
+                <h1 class="box__title">Triangle</h1>
+                <h2 class="box__text">Area</h2>
+                <img class="box__img" alt="Triangle-Area-Representation" src="img/Triangle-Area.png" height="200"
+                    width="200">
+                <form class="form form--AreaTriangle" action="#">
+                    <label for="inputFive">A</label>
+                    <input class="form__input" type="number" id="inputFive" min="0" max="100000">
+                    <label for="inputSix">H</label>
+                    <input class="form__input" type="number" id="inputSix" min="0" max="100000">
+                    Value
+                    <input class="form__input" type="text" name="value" readonly>
+                    <button class="form__button" type="button">Count</button>
+                </form>
+            </div>
+        </section>
+        <section class="section section--circumference hidden">
+            <div class="box">
+                <h1 class="box__title">Square</h1>
+                <h2 class="box__text">Circumference</h2>
+                <img class="box__img" alt="Square-Area-Circumference" src="img/Square-Circumference.png" height="200"
+                    width="200">
+                <form class="form form--CircumferenceSquare" action="#">
+                    <label for="inputSeven">A</label>
+                    <input class="form__input" type="number" id="inputSeven" min="0" max="100000">
+                    Value
+                    <input class="form__input" type="text" name="value" readonly>
+                    <button class="form__button" type="button">Count</button>
+                </form>
+            </div>
+            <div class="box">
+                <h1 class="box__title">Rectangle</h1>
+                <h2 class="box__text">Circumference</h2>
+                <img class="box__img" alt="Rectangle-Area-Circumference" src="img/Rectangle-Circumference.png"
+                    height="200" width="225">
+                <form class="form form--CircumferenceRectangle" action="#">
+                    <label for="inputEight">A</label>
+                    <input class="form__input" type="number" id="inputEight" min="0" max="100000">
+                    <label for="inputNine">B</label>
+                    <input class="form__input" type="number" id="inputNine" min="0" max="100000">
+                    Value
+                    <input class="form__input" type="text" name="value" readonly>
+                    <button class="form__button form__button" type="button">Count</button>
+                </form>
+            </div>
+            <div class="box">
+                <h1 class="box__title">Circle</h1>
+                <h2 class="box__text">Circumference</h2>
+                <img class="box__img" alt="Circle-Area-Circumference" src="img/Circle-Circumference.png" height="200"
+                    width="200">
+                <form class="form form--CircumferenceCircle" action="#">
+                    <label for="inputTen">D</label>
+                    <input class="form__input" type="number" id="inputTen" min="0" max="100000">
+                    Value
+                    <input class="form__input" type="text" name="value" readonly>
+                    <button class="form__button" type="button">Count</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

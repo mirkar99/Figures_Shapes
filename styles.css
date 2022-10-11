@@ -1,0 +1,115 @@
+@font-face{
+    font-family: RobotoCondensed-Regular;
+    src: url(fonts/RobotoCondensed-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 20vh;
+    background-color: #9698D0;
+}
+.header__title{
+    box-sizing: border-box;
+    font-family: RobotoCondensed-Regular;
+    font-style: normal;
+    font-weight: normal;
+    width: 250px;
+    font-size: 2.5em;
+    color: #170139;
+    transition: all .5s;
+}
+.header__title:hover{
+    cursor: pointer;
+    color: #FFE047;
+    background-color:#170139;
+    transform: rotate(3deg);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+    width: 250px;
+    height: 60px;
+}
+.nav__button{
+    box-sizing: border-box;
+    height: 50px;
+    width: 100px;
+    background-color: #170139;
+    color: #FFE047;
+}
+.nav__button:hover{
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background-color: #170139;
+}
+.hidden{
+    position: absolute;
+    visibility: hidden;
+    transform: scale(0);
+    opacity: 0;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9698D0;
+    width: 250px;
+    height: 500px;
+    color: #170139;
+    border-radius: 50px;
+    margin: 10px;
+   
+}
+.box__title{
+    font-family: RobotoCondensed-Regular;
+}
+.box__text{
+    font-family: RobotoCondensed-Regular;
+    font-size: 1.0em;
+
+}
+.box__img{
+    margin-top: 30px;
+}
+.form{
+    font-family: RobotoCondensed-Regular;
+    display: flex;
+    flex-direction: column;
+    color: #170139;
+}
+.form__input{
+    text-align: right;
+    color: #FFE047;
+    background-color: #170139;
+    width: 200px;
+}
+.form__button{
+    margin-top: 5px;
+    color: #FFE047;
+    background-color: #170139;
+}
+.form__button:hover{
+    cursor: pointer;
+}
