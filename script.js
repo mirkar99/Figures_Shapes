@@ -151,7 +151,7 @@ const TriangleIsoscelesCircumferenceFrom = {
     button: triangleCircumferenceIsoscelesInputs[3],
     calculateCircumference: function () {
         this.button.addEventListener('click', () => {
-            if (FormValidation.validation(this.inputMsg, this.a, this.b)) {
+            if (FormValidation.validation(this.inputMsg, this.a, this.l)) {
                 const circumferenceValue = this.a.value + 2 * this.l.value;
                 Shapes.write(this.inputMsg, circumferenceValue, ['=', 'cm']);
             }
