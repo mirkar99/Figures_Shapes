@@ -56,7 +56,7 @@ const SquareAreaFrom = {
         this.button.addEventListener('click', () => {
             if (FormValidation.validation(this.inputMsg, this.a)) {
                 const areaValue = this.a.value * this.a.value;
-                Shapes.write(this.inputMsg, areaValue, ['=', 'cm²'])
+                Shapes.write(this.inputMsg, areaValue, ['=', 'cm²']);
             }
         })
     }
@@ -71,7 +71,7 @@ const RectangleAreaFrom = {
         this.button.addEventListener('click', () => {
             if (FormValidation.validation(this.inputMsg, this.a, this.b)) {
                 const areaValue = this.a.value * this.b.value;
-                Shapes.write(this.inputMsg, areaValue, ['=', 'cm²'])
+                Shapes.write(this.inputMsg, areaValue, ['=', 'cm²']);
             }
         })
     }
@@ -84,7 +84,7 @@ const CircleAreaFrom = {
         this.button.addEventListener('click', () => {
             if (FormValidation.validation(this.inputMsg, this.r)) {
                 const areaValue = (Math.PI * Math.pow(this.r.value, 2)).toFixed(2);
-                Shapes.write(this.inputMsg, areaValue, ['≈', 'cm²'])
+                Shapes.write(this.inputMsg, areaValue, ['≈', 'cm²']);
             }
         })
     }
@@ -98,7 +98,7 @@ const TriangleAreaFrom = {
         this.button.addEventListener('click', () => {
             if (FormValidation.validation(this.inputMsg, this.a, this.h)) {
                 const areaValue = 1 / 2 * this.a.value * this.h.value;
-                Shapes.write(this.inputMsg, areaValue, ['=', 'cm²'])
+                Shapes.write(this.inputMsg, areaValue, ['=', 'cm²']);
             }
         })
     }
@@ -112,7 +112,7 @@ const SquareCircumferenceFrom = {
         this.button.addEventListener('click', () => {
             if (FormValidation.validation(this.inputMsg, this.a)) {
                 const circumferenceValue = 4 * this.a.value;
-                Shapes.write(this.inputMsg, circumferenceValue, ['=', 'cm'])
+                Shapes.write(this.inputMsg, circumferenceValue, ['=', 'cm']);
             }
         })
     }
@@ -126,7 +126,7 @@ const RectangleCircumferenceFrom = {
         this.button.addEventListener('click', () => {
             if (FormValidation.validation(this.inputMsg, this.a, this.b)) {
                 const circumferenceValue = 2 * this.a.value + 2 * this.b.value;
-                Shapes.write(this.inputMsg, circumferenceValue, ['=', 'cm'])
+                Shapes.write(this.inputMsg, circumferenceValue, ['=', 'cm']);
             }
         })
     }
@@ -139,7 +139,7 @@ const CircleCircumferenceFrom = {
         this.button.addEventListener('click', () => {
             if (FormValidation.validation(this.inputMsg, this.d)) {
                 const circumferenceValue = (Math.PI * this.d.value).toFixed(2);
-                Shapes.write(this.inputMsg, circumferenceValue, ['≈', 'cm'])
+                Shapes.write(this.inputMsg, circumferenceValue, ['≈', 'cm']);
             }
         })
     }
@@ -153,7 +153,7 @@ const TriangleIsoscelesCircumferenceFrom = {
         this.button.addEventListener('click', () => {
             if (FormValidation.validation(this.inputMsg, this.a, this.b)) {
                 const circumferenceValue = this.a.value + 2 * this.l.value;
-                Shapes.write(this.inputMsg, circumferenceValue, ['=', 'cm'])
+                Shapes.write(this.inputMsg, circumferenceValue, ['=', 'cm']);
             }
         })
     }
