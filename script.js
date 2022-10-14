@@ -6,6 +6,7 @@ const triangleAreaInputs = [...document.querySelector(".form--AreaTriangle")];
 const squareCircumferenceInputs = [...document.querySelector(".form--CircumferenceSquare")];
 const rectangleCircumferenceInputs = [...document.querySelector(".form--CircumferenceRectangle")];
 const circleCircumferenceInputs = [...document.querySelector(".form--CircumferenceCircle")];
+const triangleCircumferenceIsoscelesInputs = [...document.querySelector(".form--CircumferenceTriangleIsosceles")];
 
 const naviggation = {
     areaSection: document.querySelector('.section--area'),
@@ -143,7 +144,20 @@ const CircleCircumferenceFrom = {
         })
     }
 }
-
+const TriangleIsoscelesCircumferenceFrom = {
+    a: triangleCircumferenceIsoscelesInputs[0],
+    l: triangleCircumferenceIsoscelesInputs[1],
+    inputMsg: triangleCircumferenceIsoscelesInputs[2],
+    button: triangleCircumferenceIsoscelesInputs[3],
+    calculateCircumference: function () {
+        this.button.addEventListener('click', () => {
+            if (FormValidation.validation(this.inputMsg, this.a, this.b)) {
+                const circumferenceValue = this.a.value + 2 * this.l.value;
+                Shapes.write(this.inputMsg, circumferenceValue, ['=', 'cm'])
+            }
+        })
+    }
+}
 naviggation.changeSection();
 
 SquareAreaFrom.calculateArea();
@@ -151,6 +165,7 @@ RectangleAreaFrom.calculateArea();
 CircleAreaFrom.calculateArea();
 TriangleAreaFrom.calculateArea();
 
-SquareCircumferenceFrom.calculateCircumference()
-RectangleCircumferenceFrom.calculateCircumference()
-CircleCircumferenceFrom.calculateCircumference()
+SquareCircumferenceFrom.calculateCircumference();
+RectangleCircumferenceFrom.calculateCircumference();
+CircleCircumferenceFrom.calculateCircumference();
+TriangleIsoscelesCircumferenceFrom.calculateCircumference();
